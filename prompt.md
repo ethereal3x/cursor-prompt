@@ -48,3 +48,17 @@
 - `// validateBalanceAdjustmentImportParams 校验导入任务基础参数和最大行数限制。`
 - `// ExportBalanceAdjustImportTemplate 导出余额调整导入模板。`
 
+## 8. 常量命名规范
+- 所有业务枚举常量必须使用全大写蛇形命名（UPPER_SNAKE_CASE）。
+- 禁止使用驼峰式常量名，禁止使用语义不完整的缩写。
+- 枚举常量命名应带上明确业务前缀，确保看到名称即可判断所属领域。
+
+示例：
+- `BLACK_LIST_BEHAVIOR_SUBMISSION`
+- `WALLET_DIRECTION_IN`
+- `WALLET_DIRECTION_OUT`
+
+补充要求：
+- 同一领域常量前缀必须统一，例如黑名单统一使用 `BLACK_LIST_` 前缀。
+- 枚举值建议使用 `iota + 1` 或显式整数定义，但常量名必须保持业务语义完整。
+
